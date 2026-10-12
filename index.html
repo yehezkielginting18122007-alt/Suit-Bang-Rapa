@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit Disuruh Bang rapa Blay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="background" src="Sunny Anime Arena Battlefield.png" alt="Background">
+
+    <div class="container">
+        <header id="header">
+            <h1>BUKTIIN LO JAGO DONG BLAY</h1>
+            <h2>LAWAN NIH SAMA ASISTEN BANG KIEL</h2>
+        </header>
+
+        <div id="menu">
+            <h3>PILIH DULU MODE PERMAINAN</h3>
+
+            <button onclick="pilihMode('batu')">
+                <img src="Rock Paper Scissors_ A Chaotic Brawl.png" alt="Batu Gunting Kertas">
+                <span>Batu Gunting Kertas</span>
+            </button>
+
+            <button onclick="pilihMode('gajah')">
+                <img src="Elephant, Human, and Ant Stack.png" alt="Gajah Orang Semut">
+                <span>Gajah Orang Semut</span>
+            </button>
+
+            <button onclick="pilihMode('jari')">
+                <img src="Finger Fight_ Three-Way Showdown.png" alt="Suit Jari">
+                <span>Suit Jari</span>
+            </button>
+        </div>
+
+        <section id="game" hidden>
+            <button id="tombolKembali" onclick="kembali()">← KEMBALI KE MENU</button>
+
+            <h3 id="judulMode"></h3>
+            <h2>PILIH YANG MANA, BLAY?</h2>
+
+            <div class="arena">
+                <div class="pemain">
+                    <h3>LO</h3>
+                    <img id="gambarUser" alt="Pilihan kamu">
+                    <p id="user">Belum memilih</p>
+                </div>
+
+                <h2 class="vs">VS</h2>
+
+                <div class="pemain">
+                    <h3>KOMPUTER</h3>
+                    <img id="gambarKomputer" alt="Pilihan komputer">
+                    <p id="komputer">Menunggu...</p>
+                </div>
+            </div>
+
+            <h3>PILIH SUIT</h3>
+            <div id="pilihan"></div>
+
+            <h2 id="hasil" role="status" aria-live="polite"></h2>
+
+            <button id="tombolMain" onclick="main()">GAS, BLAY!</button>
+        </section>
+    </div>
+
+    <div id="asetGambar" hidden aria-hidden="true">
+        <img id="img-batu" src="Screenshot 2026-10-12 220232.png" alt="">
+        <img id="img-gunting" src="Screenshot 2026-10-12 220228.png" alt="">
+        <img id="img-kertas" src="Screenshot 2026-10-12 220236.png" alt="">
+
+        <img id="img-gajah" src="Screenshot 2026-10-12 220210.png" alt="">
+        <img id="img-orang" src="Screenshot 2026-10-12 220224.png" alt="">
+        <img id="img-semut" src="Screenshot 2026-10-12 220217.png" alt="">
+
+        <img id="img-jempol" src="Screenshot 2026-10-12 220241.png" alt="">
+        <img id="img-telunjuk" src="Screenshot 2026-10-12 220244.png" alt="">
+        <img id="img-kelingking" src="Screenshot 2026-10-12 220247.png" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
